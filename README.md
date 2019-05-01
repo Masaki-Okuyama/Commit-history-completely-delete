@@ -3,6 +3,10 @@
 
 GitHubにパスワードをのせたファイルをアップしてしまった時にコミット履歴を削除したときのメモ。  
 参考:[ktx2207](https://gist.github.com/ktx2207/3167fa69531bdd6b44f1)氏  
+### クローンを作る
+```
+$ git clone git@github.com:user/repository.git
+```
 ### ファイルを削除
 ```
 $ git filter-branch -f --index-filter 'git rm --ignore-unmatch ファイル名' HEAD
