@@ -23,3 +23,5 @@ $ git gc --aggressive --prune=now
 ```
 $ git push --force origin master
 ```
+  
+最後にパスワードを隠したなどしたファイルをコミットしてください。
