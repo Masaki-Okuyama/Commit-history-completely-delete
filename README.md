@@ -7,7 +7,9 @@ GitHubにパスワードをのせたファイルをアップしてしまった�
 ```
 $ git clone git@github.com:user/repository.git
 ```
-### ファイルを削除
+### ファイルを削除  
+ここでファイルを削除するので新たにクローンを作りました。  
+全ての場所からファイルが消えることがないように気をつけてください。
 ```
 $ git filter-branch -f --index-filter 'git rm --ignore-unmatch ファイル名' HEAD
 ```
@@ -24,4 +26,4 @@ $ git gc --aggressive --prune=now
 $ git push --force origin master
 ```
   
-最後にパスワードを隠したなどしたファイルをコミットしてください。
+最後にパスワードを隠したなどしたファイルをプッシュしてください。
